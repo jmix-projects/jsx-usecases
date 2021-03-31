@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { 
+  ConditionalComponent1,
+  ConditionalComponent2,
+  ConditionalComponent3,
+  ConditionalComponent4,
+  ConditionalComponent5,
+  TernaryComponent,
+  SwitchComponent
+} from "./use-cases/conditions/ConditionalComponents";
+import {ComponentWithMap} from "./use-cases/mapping/ComponentWithMap";
+import {
+  JsxElementsComponent,
+  JsxArrayComponent
+} from "./use-cases/jsx-element/JsxElementsComponent";
+import {RenderFunctionComponent} from "./use-cases/render-function/RenderFunctionComponent"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ConditionalComponent1 />
+      <ConditionalComponent2 />
+      <ConditionalComponent3 />
+      <ConditionalComponent4 />
+      <ConditionalComponent5 />
+      <TernaryComponent />
+      <SwitchComponent />
+      <ComponentWithMap />
+      <JsxElementsComponent />
+      <JsxArrayComponent />
+      <RenderFunctionComponent />
     </div>
   );
 }
